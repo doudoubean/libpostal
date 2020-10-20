@@ -82,9 +82,9 @@ AC_ARG_ENABLE([sse2],
         )
     )
 
-AS_IF([test "x$enable_sse2" != "xno"], [
-    CFLAGS="-mfpmath=sse -msse2 -DUSE_SSE ${CFLAGS}"
-])
+#AS_IF([test "x$enable_sse2" != "xno"], [
+#    CFLAGS="-mfpmath=sse -msse2 -DUSE_SSE ${CFLAGS}"
+#])
 
 AC_CHECK_HEADER(cblas.h, [AX_CBLAS])
 
